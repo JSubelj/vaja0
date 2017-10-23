@@ -21,8 +21,8 @@ public class ArtistDB {
             if (artist.getId().equals(artistId)){
                 List<String> albums = new ArrayList<String>();
                 for (String id : artist.getAlbumIds()) {
-                    System.out.println(GetRequest("http://localhost:8080/v1/Albums/id/" + id));
-                    albums.add(GetRequest("http://localhost:8080/v1/Albums/id/" + id));
+                    System.out.println(GetRequest("http://192.168.99.100:8080/v1/Albums/id/" + id));
+                    albums.add(GetRequest("http://192.168.99.100:8080/v1/Albums/id/" + id));
                     System.out.println(id);
                 }
                 artist.setAlbums(albums);

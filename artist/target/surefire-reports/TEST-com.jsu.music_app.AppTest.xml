@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.jsu.music_app.AppTest" time="0.004" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="com.jsu.music_app.AppTest" time="0.01" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_151\jre\bin"/>
@@ -30,7 +30,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:/Program Files (x86)/apache-maven-3.5.0/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Cleptes\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Cleptes\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Users\Cleptes\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Java\jdk1.8.0_151;C:\Program Files (x86)\apache-maven-3.5.0\bin;C:\glassfish4\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_151\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Cleptes\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Cleptes\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\Git\cmd;C:\Users\Cleptes\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Java\jdk1.8.0_151;C:\Program Files (x86)\apache-maven-3.5.0\bin;C:\glassfish4\bin;C:\Program Files\Docker\Docker;C:\Program Files\Docker Toolbox;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
     <property name="maven.conf" value="C:/Program Files (x86)/apache-maven-3.5.0/conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -55,14 +55,16 @@
     <property name="java.version" value="1.8.0_151"/>
     <property name="java.ext.dirs" value="C:\Program Files (x86)\Java\jdk1.8.0_151\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
     <property name="sun.boot.class.path" value="C:\Program Files (x86)\Java\jdk1.8.0_151\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.8.0_151\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.8.0_151\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.8.0_151\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.8.0_151\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.8.0_151\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.8.0_151\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.8.0_151\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="maven.home" value="C:\Program Files (x86)\apache-maven-3.5.0"/>
     <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.jsu.music_app.AppTest" name="testApp" time="0.004"/>
+  <testcase classname="com.jsu.music_app.AppTest" name="testApp" time="0.01"/>
 </testsuite>
