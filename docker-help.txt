@@ -1,0 +1,17 @@
+DOCKERFILE
+
+docker images
+openjdk
+
+buildaš dockker file:
+docker build -t <pathtorepo>/ime:tag(0.01) .
+docker push <pathtorepo>/ime:tag(0.01)
+docker run -p 8080:8080 <pathtorepo>/ime:tag(0.01)
+docker ps (z njim pogledamo keri dockerji laufajo)
+docker stop (ime slike k ti ga docker doda)
+docker start (ime slike k ti ga docker doda)
+
+slika se požene v docker hostu
+treba je specificirat povezavo med containerjem pa dockerhoastu
+portmapping (-p)
+
