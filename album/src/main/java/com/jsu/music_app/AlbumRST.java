@@ -8,7 +8,7 @@ import java.util.List;
 
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
-@Path("Albums")
+@Path("albums")
 public class AlbumRST {
 
     @GET
@@ -24,8 +24,8 @@ public class AlbumRST {
     }
 
     @GET
-    @Path("/id/{id}")
-    public Response getAlbum(@PathParam("id") String id){
+    @Path("/query")
+    public Response getAlbum(@QueryParam("id") String id){
         Album album=AlbumDB.getByAlbumId(id);
         if(album == null){
             return Response.status(Response.Status.NOT_FOUND).build();

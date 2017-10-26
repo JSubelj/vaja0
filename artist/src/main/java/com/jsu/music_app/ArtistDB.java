@@ -1,15 +1,18 @@
 package com.jsu.music_app;
 
+import javax.ws.rs.InternalServerErrorException;
+import javax.ws.rs.ProcessingException;
+import javax.ws.rs.WebApplicationException;
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.core.GenericType;
 import java.util.ArrayList;
 import java.util.List;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
+import java.util.Optional;
 
 public class ArtistDB {
+
+
     private static List<Artist> artists = new ArrayList<>();
 
     public static List<Artist> getArtists() {
@@ -19,12 +22,15 @@ public class ArtistDB {
     public static Artist getArtist(String artistId) {
         for (Artist artist : artists) {
             if (artist.getId().equals(artistId)){
-                List<String> albums = new ArrayList<String>();
+                List<Album> albums = new ArrayList<Album>();
+
                 for (String id : artist.getAlbumIds()) {
-                    System.out.println(GetRequest("http://192.168.99.100:8080/v1/Albums/id/" + id));
-                    albums.add(GetRequest("http://192.168.99.100:8080/v1/Albums/id/" + id));
-                    System.out.println(id);
+                    //System.out.println(id);
+                    //System.out.println(getAlbums(id));
+                    albums.add(getAlbums(id));
+
                 }
+                System.out.println(albums);
                 artist.setAlbums(albums);
 
                 return artist;
@@ -46,42 +52,25 @@ public class ArtistDB {
             }
         }
     }
-    public static String GetRequest(String link) {
-        try {
 
-            URL url = new URL(link);
-            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-            conn.setRequestMethod("GET");
-            conn.setRequestProperty("Accept", "application/json");
+    public static Album getAlbums(String albumId) {
+        Optional<String> baseUrl=Optional.of("http://192.168.99.100:8080");
 
-            if (conn.getResponseCode() != 200) {
-                throw new RuntimeException("Failed : HTTP error code : "
-                        + conn.getResponseCode());
+        Client httpClient = ClientBuilder.newClient();
+
+        if (baseUrl.isPresent()) {
+
+            try {
+                return httpClient
+                        .target(baseUrl.get() + "/v1/albums/query?id=" + albumId)
+                        .request().get(new GenericType<Album>() {
+                        });
+            } catch (WebApplicationException | ProcessingException e) {
+                System.out.println(e);
+                throw new InternalServerErrorException(e);
             }
-
-            BufferedReader br = new BufferedReader(new InputStreamReader(
-                    (conn.getInputStream())));
-
-            String output = "";
-            String tmp;
-            //System.out.println("Output from Server .... \n");
-            while ((tmp = br.readLine()) != null) {
-                output += tmp;
-            }
-
-            conn.disconnect();
-            return output;
-
-        } catch (MalformedURLException e) {
-
-            e.printStackTrace();
-            return null;
-
-        } catch (IOException e) {
-
-            e.printStackTrace();
-            return null;
-
+        } else {
+            return new Album();
         }
     }
 }

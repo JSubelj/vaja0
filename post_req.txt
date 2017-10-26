@@ -1,0 +1,10 @@
+------------ALBUMS----------
+{"name":"Singularity","id":"1","artist":"Stortregn"}
+{"name":"Trollmin","id":"2","artist":"Drakum"}
+{"name":"Evocation Of Light","id":"3","artist":"Stortregn"}
+{"name":"Uncreation","id":"4","artist":"Stortregn"}
+{"name":"Devoured by Oblivion","id":"5","artist":"Stortregn"}
+
+------------ARTIST-------------------------
+{"name":"Stortregn","id":"1","albumIds":["1","3","4","5"]}
+{"name":"Drakum","id":"2","albumIds":["2"]}

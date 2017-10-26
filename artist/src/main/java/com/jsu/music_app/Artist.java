@@ -7,14 +7,14 @@ public class Artist {
     private String name;
     private String id;
     private List<String> AlbumIds;
-    private List<String> Albums;
+    private List<Album> Albums;
 
-    public List<String> getAlbums() {
+    public List<Album> getAlbums() {
 
         return Albums;
     }
 
-    public void setAlbums(List<String> Albums) {
+    public void setAlbums(List<Album> Albums) {
         this.Albums = Albums;
     }
 

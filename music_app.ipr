@@ -13,11 +13,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="album" />
         <module name="artist" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="artist" target="1.5" />
+      <module name="album" target="1.7" />
+      <module name="artist" target="1.8" />
+      <module name="music_app" target="1.7" />
     </bytecodeTargetLevel>
   </component>
   <component name="ExportToHTMLSettings">
@@ -72,15 +75,22 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/artist/pom.xml" />
+        <option value="$PROJECT_DIR$/album/pom.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/artist.iml" filepath="$PROJECT_DIR$/artist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/album/album.iml" filepath="$PROJECT_DIR$/album/album.iml" />
+      <module fileurl="file://$PROJECT_DIR$/artist/artist.iml" filepath="$PROJECT_DIR$/artist/artist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/music_app.iml" filepath="$PROJECT_DIR$/music_app.iml" />
     </modules>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="1.8" />
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+  </component>
   <component name="libraryTable">
     <library name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.10">
       <CLASSES>
