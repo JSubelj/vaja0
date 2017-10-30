@@ -571,5 +571,6 @@
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.8.10" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.8.10" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.10" level="project" />
+    <orderEntry type="library" name="Maven: com.kumuluz.ee.config:kumuluzee-config-etcd:${kumuluzee-config.version}" level="project" />
   </component>
 </module>

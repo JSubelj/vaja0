@@ -762,5 +762,6 @@
     <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.3.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.jersey.ext.cdi:jersey-cdi1x:2.25.1" level="project" />
     <orderEntry type="module" module-name="album" />
+    <orderEntry type="library" name="Maven: com.kumuluz.ee.config:kumuluzee-config-etcd:${kumuluzee-config.version}" level="project" />
   </component>
 </module>
