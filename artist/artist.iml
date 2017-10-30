@@ -738,8 +738,6 @@
     <orderEntry type="library" name="Maven: org.glassfish.jersey.media:jersey-media-json-jackson:2.25.1" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.jersey.ext:jersey-entity-filtering:2.25.1" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.8.10" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.10" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.10" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.8.10" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.8.10" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.10" level="project" />
@@ -762,5 +760,20 @@
     <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.3.0.Final" level="project" />
     <orderEntry type="library" name="Maven: org.glassfish.jersey.ext.cdi:jersey-cdi1x:2.25.1" level="project" />
     <orderEntry type="module" module-name="album" />
+    <orderEntry type="library" name="Maven: com.kumuluz.ee.config:kumuluzee-config-etcd:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: com.kumuluz.ee.config:kumuluzee-config-common:1.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.mousio:etcd4j:2.13.0" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-codec-dns:4.1.7.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-codec:4.1.7.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-codec-http:4.1.7.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-handler:4.1.7.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-buffer:4.1.7.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-common:4.1.7.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-transport:4.1.7.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-resolver-dns:4.1.7.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-resolver:4.1.7.Final" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.10" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.8.10" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-afterburner:2.8.10" level="project" />
   </component>
 </module>

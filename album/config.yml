@@ -1,0 +1,15 @@
+kumuluzee:
+  name: customer-service
+  version: 1.0.0
+  env:
+    name: dev
+  config:
+    start-retry-delay-ms: 500
+    max-retry-delay-ms: 900000
+    etcd:
+      hosts: http://192.168.99.100:2379
+
+rest-config:
+  string-property: Monday
+  boolean-property: true
+  integer-property: 23

@@ -15,8 +15,8 @@ cache:
 
 script:
   - mvn clean package -U
-  - docker build -t cleptes/rso-customers ./album
-  - docker build -t cleptes/rso-customers ./artist
+  - docker build -t cleptes/album ./album
+  - docker build -t cleptes/artist ./artist
 
 after_success:
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
