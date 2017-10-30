@@ -158,17 +158,6 @@
         <root url="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.8.10/jackson-module-jaxb-annotations-2.8.10-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: com.kumuluz.ee.config:kumuluzee-config-etcd:${kumuluzee-config.version}">
-      <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/kumuluz/ee/config/kumuluzee-config-etcd/${kumuluzee-config.version}/kumuluzee-config-etcd-${kumuluzee-config.version}.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/com/kumuluz/ee/config/kumuluzee-config-etcd/${kumuluzee-config.version}/kumuluzee-config-etcd-${kumuluzee-config.version}-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/com/kumuluz/ee/config/kumuluzee-config-etcd/${kumuluzee-config.version}/kumuluzee-config-etcd-${kumuluzee-config.version}-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: com.kumuluz.ee:kumuluzee-cdi-weld:2.4.1">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/com/kumuluz/ee/kumuluzee-cdi-weld/2.4.1/kumuluzee-cdi-weld-2.4.1.jar!/" />
