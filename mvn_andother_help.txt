@@ -29,9 +29,15 @@
 --------END-ROOT-MAVEN-pom.xml-------
 
 --------GEN-PROJ-MAVEN-CMD-----------
+v bashu:
 mvn -B archetype:generate \
     -DarchetypeGroupId=org.apache.maven.archetypes \
     -DgroupId=$ID-PROJEKTA$ \
     -DartifactId=$IME-SUBPROJEKTA$
+v powershell:
+mvn -B archetype:generate 
+    "-DarchetypeGroupId=org.apache.maven.archetypes" 
+    "-DgroupId=$ID-PROJEKTA$" 
+    "-DartifactId=$IME-SUBPROJEKTA$"
 
 -------END-GEN-PROJ-MAVEN-CMD--------
